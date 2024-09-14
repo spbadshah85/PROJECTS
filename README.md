@@ -89,7 +89,7 @@ And more to come!
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/web-development-projects.git
+   git clone https://github.com/Krishnkant47/PROJECTS/
    ```
 2. Navigate to the project folder you want to explore:
    ```bash

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding set to UTF-8 to support special characters -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures the page is optimized for mobile devices by setting the viewport width to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tag to specify the author of the webpage -->
+    <meta name="author" content="KRISHN-KANT">
+
+    <!-- Meta description for SEO, summarizing the content of the page -->
+    <meta name="description" content="Store Hours for The Little Taco Shop">
+
+    <!-- Page title, displayed in the browser's title bar or tab -->
+    <title>LTS Hours</title>
+
+    <!-- Link to the favicon, a small icon that appears in the browser tab -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Link to an external CSS stylesheet for page styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript file loaded after the HTML document is parsed -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section containing the website title and navigation menu -->
+    <header class="header">
+        <!-- Main heading for the website title, centered on the page -->
+        <h1 class="header__h1 center">Little Taco Shop</h1>
+
+        <!-- Navigation menu for users to move between different pages -->
+        <nav class="header__nav">
+            <!-- Unordered list of navigation links -->
+            <ul class="header__ul">
+                <li><a href="/">Home</a></li> <!-- Link to the homepage -->
+                <li><a href="/#menu">Menu</a></li> <!-- Link to the menu section -->
+                <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
+                <li><a href="about.html">About</a></li> <!-- Link to the about page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with a featured image -->
+    <section class="hero">
+        <!-- Image of tacos with alt text and title for better accessibility and hover effect -->
+        <figure>
+            <img src="img/tacos_tray_1000x667.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!"
+                width="1000" height="667">
+            
+            <!-- Offscreen figcaption for screen readers, describing the image -->
+            <figcaption class="offscreen">
+                A Tray of Tasty Tacos
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Main content section -->
+    <main class="main">
+        <!-- Article element that describes the store hours -->
+        <article class="main__article">
+            <!-- Subheading for the hours section -->
+            <h2>Hours</h2>
+
+            <!-- Paragraph indicating that the store is open every day of the week -->
+            <p>We are open 7 days a week!</p>
+
+            <!-- Definition list to organize the opening hours by day -->
+            <dl>
+                <!-- Definition term for Sunday through Thursday hours -->
+                <dt>Sunday-Thursday</dt>
+                <!-- Definition data for Sunday through Thursday hours -->
+                <dd>11am-9pm</dd>
+                
+                <!-- Definition term for Friday and Saturday hours -->
+                <dt>Friday-Saturday</dt>
+                <!-- Definition data for Friday and Saturday hours -->
+                <dd>11am-11pm</dd>
+            </dl>
+        </article>
+    </main>
+
+    <!-- Footer section containing copyright information -->
+    <footer class="footer">
+        <p>
+            <!-- Dynamic year for copyright, updated via JavaScript -->
+            <span class="nowrap">Copyright &copy; <time id="year"></time> </span>
+            <!-- The name of the business -->
+            <span class="nowrap">Little Taco Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>

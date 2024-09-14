@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.testimonial-container {
+    max-width: 400px;
+    height: 250px;
+    background-color: slateblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}
+
+.text {
+    margin-top: 55px;
+    height: 108px;
+    text-align: justify;
+}
+
+.user-name {
+    margin-top: 40px;
+    text-align: center;
+}
+.author-name {
+    font-family: cursive;
+    font-weight: 200;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-inline-end: 10px;
+}

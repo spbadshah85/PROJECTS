@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage that appears on the browser tab -->
+    <title>Number Guessing Game</title>
+
+    <!-- Links an external CSS file 'style.css' to style the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the game content -->
+    <div class="container">
+        
+        <!-- Paragraph explaining the objective of the game -->
+        <p class="para">Try and guess a random number between 1 to 100</p>
+
+        <!-- Paragraph explaining the number of attempts allowed -->
+        <p class="para">You have 10 attempts to guess the right number</p>
+
+        <!-- Form for inputting the user's guess -->
+        <form class="input-container">
+            <!-- Label describing the input field -->
+            <label for="user-input" class="para label">Please enter your number below</label>
+            
+            <!-- Span to display error messages if the input is invalid -->
+            <span class="error"></span>
+
+            <!-- Input field for the user to enter their guess -->
+            <input type="text" id="user-input">
+            
+            <!-- Button to submit the user's guess -->
+            <button type="submit" class="btn"><span class="btn-text">Play Now</span></button>
+        </form>
+
+        <!-- Paragraph to display previous guesses made by the player -->
+        <p class="para prev-guess">Previous Guess: [0 0]</p>
+
+        <!-- Paragraph to show the number of attempts remaining -->
+        <p class="para">Attempts Left: <span class="attempts-left">10</span></p>
+
+        <!-- Attribution to the developer of the game -->
+        <a class="author-name">Developed by KrishnKant</a>
+
+        <!-- Link to the external JavaScript file that handles the game logic -->
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Define the character encoding for the document as UTF-8 -->
+        <meta charset="UTF-8">
+        
+        <!-- Set the viewport to ensure proper scaling and rendering on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Meta tag indicating the author of the page -->
+        <meta name="author" content="KRISHN-KANT">
+        
+        <!-- Meta description for search engine optimization (SEO) -->
+        <meta name="description" content="Contact information for The Little Taco Shop">
+        
+        <!-- Title that will appear in the browser tab -->
+        <title>Contact Us - LTS</title>
+        
+        <!-- Link to the favicon that appears in the browser tab -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <!-- Link to the external stylesheet for page styling -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- External JavaScript file with 'defer' attribute to load after the HTML is parsed -->
+        <script src="main.js" defer></script>
+    </head>
+
+<body>
+    <!-- Header section containing the website's title and navigation menu -->
+    <header class="header">
+        <!-- Website title, center-aligned -->
+        <h1 class="header__h1 center">Little Taco Shop</h1>
+        
+        <!-- Navigation menu for accessing different pages -->
+        <nav class="header__nav">
+            <!-- Unordered list of navigation links -->
+            <ul class="header__ul">
+                <li><a href="/">Home</a></li> <!-- Link to the homepage -->
+                <li><a href="/#menu">Menu</a></li> <!-- Link to the menu section -->
+                <li><a href="hours.html">Hours</a></li> <!-- Link to the hours page -->
+                <li><a href="about.html">About</a></li> <!-- Link to the about page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with an image related to the shop -->
+    <section class="hero">
+        <figure>
+            <!-- Image of tacos with alt text and title for accessibility -->
+            <img src="img/tacos_close_up_1000x649.png" alt="Little Taco Shop Tacos" title="Tacos ready to eat!"
+                width="1000" height="649">
+            
+            <!-- Description of the image for screen readers -->
+            <figcaption class="offscreen">
+                Little Taco Shop Tacos
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Main content area of the page -->
+    <main class="main">
+        <!-- Article containing the shop's location and contact details -->
+        <article class="main__article">
+            <!-- Subheading for the location section -->
+            <h2>Our Location</h2>
+            
+            <!-- Address of the taco shop -->
+            <address>
+                555 Taco Temptation Lane, Suite T<br>
+                Kansas City, MO 55555-5555
+                <br><br>
+                Phone: <a href="tel:+5555555555">555-555-5555</a> <!-- Phone number with a clickable link -->
+            </address>
+        </article>
+
+        <!-- Horizontal line separating sections -->
+        <hr>
+
+        <!-- Article containing the contact form -->
+        <article class="main__article contact">
+            <!-- Subheading for the contact form -->
+            <h2 class="contact__h2">Contact Form</h2>
+
+            <!-- Form that sends a GET request to httpbin.org to simulate message submission -->
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <!-- Fieldset to group form inputs, with a hidden legend for accessibility -->
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    
+                    <!-- Form input for user's name -->
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+
+                    <!-- Form input for user's email -->
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                    </p>
+
+                    <!-- Text area for user's message -->
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Submit button to send the form -->
+                <button class="contact__btn" type="submit">Send</button>
+                
+                <!-- Reset button to clear the form fields -->
+                <button class="contact__btn" type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+
+    <!-- Footer section containing copyright information -->
+    <footer class="footer">
+        <p>
+            <!-- Copyright notice with dynamic year and the shop's name -->
+            <span class="nowrap">Copyright &copy; <time id="year"></time> </span>
+            <span class="nowrap">Little Taco Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>

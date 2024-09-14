@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specify the character encoding for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensure compatibility with older versions of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Set the viewport for responsive design across different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>Loan Calculator</title>
+    
+    <!-- Link to the external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the loan calculator interface -->
+    <div class="container">
+        <!-- Header of the loan calculator -->
+        <h1>Loan Calculator</h1>
+        
+        <!-- Input field for the loan amount -->
+        <p>Loan Amount ₹
+            <!-- On change, the calculateLoan function is triggered to update the payment -->
+            <input onchange="calculateLoan()" class="input" type="number" id="loan-amount" min="1" max="5000000" value="10000">
+        </p>
+        
+        <!-- Input field for the interest rate -->
+        <p>Interest Rate %
+            <!-- On change, the calculateLoan function is triggered to update the payment -->
+            <input onchange="calculateLoan()" class="input" type="number" id="interest-rate" min="0" max="100" value="10" step=".1">
+        </p>
+        
+        <!-- Input field for the number of months to pay the loan -->
+        <p>Months to pay
+            <!-- On change, the calculateLoan function is triggered to update the payment -->
+            <input onchange="calculateLoan()" class="input" type="number" id="months-to-pay" min="6" max="48" value="12">
+        </p>
+        
+        <!-- Paragraph to display the calculated monthly payment -->
+        <p class="payment" id="payment">Monthly Payment:</p>
+    </div>
+
+    <!-- Link to the external JavaScript file that contains the loan calculation logic -->
+    <script src="index.js"></script>
+</body>
+</html>

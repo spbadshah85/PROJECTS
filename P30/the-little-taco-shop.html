@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tag specifying the author of the webpage -->
+    <meta name="author" content="KRISHN-KANT">
+    
+    <!-- Description of the website for SEO purposes -->
+    <meta name="description" content="The official website for The Little Taco Shop">
+    
+    <!-- Title that appears on the browser tab -->
+    <title>The Little Taco Shop</title>
+    
+    <!-- Link to the favicon (small icon displayed on the browser tab) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Link to the external stylesheet for page styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to the external JavaScript file, with 'defer' to load it after HTML is parsed -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section containing the page's title and navigation links -->
+    <header class="header">
+        <!-- Main heading of the page with center-aligned text -->
+        <h1 class="header__h1 center">Little Taco Shop</h1>
+        
+        <!-- Navigation bar for the page -->
+        <nav class="header__nav">
+            <!-- Unordered list of navigation links -->
+            <ul class="header__ul">
+                <li>
+                    <!-- Link to the menu section of the page -->
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <!-- Link to the hours page -->
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <!-- Link to the contact page -->
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <!-- Link to the about page -->
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section containing a welcome message and a hero image -->
+    <section class="hero">
+        <!-- Secondary heading welcoming the user -->
+        <h2 class="hero__h2">Welcome!</h2>
+        
+        <!-- Image with a caption (hidden for accessibility) -->
+        <figure>
+            <!-- Image of tacos and a drink -->
+            <img src="img/tacos_and_drink_1000x667.png" alt="Tacos and a Drink" title="We love tacos!" width="1000" height="667">
+            <!-- Hidden caption for screen readers -->
+            <figcaption class="offscreen">
+                Tacos and a Drink
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Main content of the page -->
+    <main class="main">
+        <!-- Article for the menu section -->
+        <article id="menu" class="main__article menu">
+            <!-- Secondary heading for the menu section -->
+            <h2 class="menu__h2">Our Menu</h2>
+            
+            <!-- Table displaying the taco menu -->
+            <table class="menu__container">
+                <!-- Hidden caption for screen readers -->
+                <caption class="offscreen">Our Tacos</caption>
+                
+                <!-- Table headers for taco types, quantity, and price -->
+                <thead>
+                    <tr>
+                        <th class="menu__header">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                
+                <!-- Table body containing taco options -->
+                <tbody>
+                    <!-- Crunchy taco options with different quantities and prices -->
+                    <tr>
+                        <th class="menu__cr menu__item" scope="row" rowspan="3">Crunchy</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
+                    </tr>
+                    
+                    <!-- Soft taco options with different quantities and prices -->
+                    <tr>
+                        <th class="menu__sf menu__item" scope="row" rowspan="3">Soft</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.50</td>
+                    </tr>
+                </tbody>
+                
+                <!-- Table footer with additional menu item -->
+                <tfoot>
+                    <tr>
+                        <td class="menu__cs menu__item" colspan="3">Chips &amp; Salsa $2</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <!-- Link to scroll back to the top of the page -->
+            <p class="center">
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+    </main>
+
+    <!-- Footer section containing copyright information -->
+    <footer class="footer">
+        <p>
+            <!-- Copyright notice with dynamic year -->
+            <span class="nowrap">Copyright &copy; <time id="year"></time> </span>
+            <span class="nowrap">Little Taco Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>

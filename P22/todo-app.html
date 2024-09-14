@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>TODO App</title>
+    <!-- Link to the external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main header for the TODO app -->
+    <h1 class="header">TODO APP</h1>
+
+    <!-- Container for input fields and button to add new todos -->
+    <div class="grid-container">
+        <!-- Input field for entering TODO text -->
+        <input class="todo-input inputs-style" type="text" placeholder="Enter your task">
+        <!-- Input field for selecting a date -->
+        <input class="todo-date inputs-style" type="date">
+        <!-- Button to add a new TODO item, triggers addNewTodo function on click -->
+        <button onclick="addNewTodo();" class="todo-add inputs-style btn">ADD</button>
+    </div>
+
+    <!-- Container for displaying the list of TODO items -->
+    <div class="todo-item-container grid-container"></div>
+
+    <!-- Button to reset the TODO list, triggers delTodoList and displayTodoList functions on click -->
+    <button onclick="
+        delTodoList();
+        displayTodoList();
+    " class="delete-all inputs-style btn">Reset</button>
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin-bottom: 50px;
+}
+.title {
+  font-size: 2.5em;
+}
+.year {
+  font-size: 7em;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.time span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 15px;
+}
+.month::after {
+  content: "month";
+}
+.day::after {
+  content: "day";
+}
+.hour::after {
+  content: "hour";
+}
+.minute::after {
+  content: "minute";
+}
+.second::after {
+  content: "second";
+}
+.after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

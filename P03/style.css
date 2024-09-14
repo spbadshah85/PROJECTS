@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Permanent+Marker&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Calistoga", serif;
+}
+
+.container {
+    background-color: whitesmoke;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.month {
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.day-name, .year {
+    margin: 20px 0;
+    font-size: 20px;
+    color: darkgray;
+}
+.day-number {
+    font-size: 80px;
+    font-weight: bold;
+}
+.author-name {
+    font-family: cursive;
+    font-weight: 200;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-inline-end: 10px;
+}

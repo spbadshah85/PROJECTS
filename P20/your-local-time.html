@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+
+    <title>Your Local Time</title>
+
+    <!-- Internal styles specific to this page -->
+    <style>
+      /* Sets the background color of the body to dark grey and the text color to white */
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+
+      /* Centers the content vertically and horizontally using Flexbox */
+      .center {
+        display: flex;
+        height: 100vh; /* Full viewport height */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Places elements one below the other */
+      }
+
+      /* Styles for the clock element, including font size, background color, padding, and rounded corners */
+      #clock {
+        font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+        margin-top: 10px;
+        border-radius: 10px; /* Gives the clock a rounded look */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Main content area, centered using Flexbox -->
+    <div class="center">
+      <!-- Banner text displaying "Your local time" -->
+      <div id="banner"><span>Your local time</span></div>
+
+      <!-- Placeholder for the clock that will show the current local time -->
+      <div id="clock"></div>
+    </div>
+
+    <!-- Link to an external JavaScript file that will manage clock functionality -->
+    <script src="main.js"></script>
+  </body>
+</html>

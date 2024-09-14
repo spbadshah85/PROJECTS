@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding as UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures the page is responsive by adjusting to the screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage, shown on the browser tab -->
+    <title>Rotating Image Gallery</title>
+    
+    <!-- Links to the external stylesheet (style.css) for styling the elements -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- A container for holding the image elements -->
+    <div class="image-container">
+        <!-- Each span holds an image and uses a custom CSS property '--i' for individual styling -->
+        <span style="--i: 1"><img src="https://picsum.photos/id/237/300/200" alt="Image 1"></span>
+        <span style="--i: 2"><img src="https://picsum.photos/id/27/300/200" alt="Image 2"></span>
+        <span style="--i: 3"><img src="https://picsum.photos/id/37/300/200" alt="Image 3"></span>
+        <span style="--i: 4"><img src="https://picsum.photos/id/23/300/200" alt="Image 4"></span>
+        <span style="--i: 5"><img src="https://picsum.photos/id/7/300/200" alt="Image 5"></span>
+        <span style="--i: 6"><img src="https://picsum.photos/id/2/300/200" alt="Image 6"></span>
+        <span style="--i: 7"><img src="https://picsum.photos/id/3/300/200" alt="Image 7"></span>
+        <span style="--i: 8"><img src="https://picsum.photos/id/20/300/200" alt="Image 8"></span>
+    </div>
+    
+    <!-- A container for the 'prev' and 'next' buttons used for navigating the images -->
+    <div class="btn-container">
+        <!-- Button to navigate to the previous image -->
+        <button class="btn" id="prev">prev</button>
+        
+        <!-- Button to navigate to the next image -->
+        <button class="btn" id="next">next</button>
+    </div>
+
+    <!-- Links to an external JavaScript file (main.js) for adding interactivity to the image gallery -->
+    <script src="main.js"></script>
+</body>
+</html>

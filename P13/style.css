@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1),
+    -10px -10px 6px rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  transition: width 0.5s linear;
+}
+.magnifier {
+  position: absolute;
+  bottom: 13px;
+  left: 13px;
+}
+.input {
+  height: 50px;
+  width: 100%;
+  margin: 10px 50px;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  color: rgb(100, 100, 100);
+  transition: width 0.4s ease-in;
+  /* transition-delay: 0.1s; */
+}
+.mic {
+  position: absolute;
+  right: 0px;
+  width: 15%;
+  transition: width 0.4s linear;
+  transition-delay: 0.1s;
+}
+.container.active {
+  width: 50px;
+}
+
+.active .input {
+  width: 0;
+}
+.active .mic {
+  width: 0;
+}

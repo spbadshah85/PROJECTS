@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="master">
+        <div class="play-list">
+            <div class="list-items"></div>
+            <input type="file" id="file-input" accept="audio/*" multiple>
+            <label for="file-input" class="select">Select your songs</label>
+        </div>
+        <div class="music-player">
+            <canvas class="canvas"></canvas>
+            <div class="controler">
+                <div class="name">Krishn Kant</div>
+                <div class="bar-cir">
+                    <div class="bar"></div>
+                    <div class="cir"></div>
+                </div>
+                <div class="time">
+                    <div class="current">00:00</div>
+                    <div class="run">
+                        <img src="SVG/prev.svg">
+                        <img src="SVG/play.svg">
+                        <img src="SVG/next.svg">
+                    </div>
+                    <div class="duration">00:00</div>
+                </div>
+                <div class="loop">
+                    <img src="SVG/speed.svg">
+                    <img src="SVG/10s.svg">
+                    <img src="SVG/loop.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* FONTS */
+    --FF: "Nunito", sans-serif;
+    --FF_HEADINGS: "Fugaz One", cursive;
+    --FC: #333;
+
+    /* COLORS */
+    --BGCOLOR_FADE: rgb(252, 220, 160);
+    --BGCOLOR: orange;
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR_FADE));
+    --BODY_BGCOLOR: rgba(233, 128, 191, 0.327);
+    --BORDER_COLOR: #333;
+    --BTN_ACTIVE: rgb(220, 207, 21);
+    --BTN_COLOR: rgb(250, 96, 41);
+    --BTN_HOVER: coral;
+    --INPUT_COLOR: #8b292949;
+
+    /* BORDERS */
+    --BORDERS: 1px solid var(--BORDER_COLOR);
+    --BORDER_RADIUS: 15px;
+}
+
+html {
+    font-family: var(--FF);
+    background-color: var(--BGCOLOR);
+    background-image: var(--BGIMAGE);
+}
+
+body {
+    background-color: var(--BODY_BGCOLOR);
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-inline: var(--BORDERS);
+    box-shadow: 0 0 10px var(--BORDER_COLOR);
+}
+
+.header {
+    text-align: center;
+    font-family: var(--FF_HEADINGS);
+}
+
+.delete-all {
+    display: block;
+    width: 60px;
+    margin: 20px auto;
+}
+
+.grid-container {
+    max-width: 510px;
+    display: grid;
+    grid-template-columns: minmax(140px,250px) 120px minmax(50px, 100px);
+    gap: 10px 20px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.inputs-style {
+    padding: 0.3rem 0px;
+    border-radius: 15px;
+    border: none;
+    font: inherit;
+    outline: none;
+    background-color: var(--INPUT_COLOR);
+    color: var(--FC);
+}
+
+.todo-input {
+    padding: 0.3rem 5px;
+}
+
+.btn {
+    background-color: var(--BTN_COLOR);
+    padding: 6px;
+}
+
+.btn:hover {
+background-color: var(--BTN_HOVER);
+}
+
+.btn:active {
+    background-color: var(--BTN_ACTIVE);
+}
+

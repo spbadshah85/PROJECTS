@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>Profile Statistics</title>
+    
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link to the custom stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- First stat container: Years of experience -->
+    <div class="stats-container">
+      <!-- Icon representing the experience (briefcase) -->
+      <i class="fas fa-briefcase fa-3x icon"></i>
+      <!-- Counter for years of experience (data-ceil is the target value) -->
+      <div class="counter" data-ceil="15">15</div>
+      <!-- Description for the counter -->
+      <h4>Years Experience</h4>
+    </div>
+
+    <!-- Second stat container: Websites made -->
+    <div class="stats-container">
+      <!-- Icon representing websites made (cloud icon) -->
+      <i class="fas fa-cloud fa-3x icon"></i>
+      <!-- Counter for websites made -->
+      <div class="counter" data-ceil="260">260</div>
+      <!-- Description for the counter -->
+      <h4>Websites Made</h4>
+    </div>
+
+    <!-- Third stat container: Apps made -->
+    <div class="stats-container">
+      <!-- Icon representing apps made (Apple logo icon) -->
+      <i class="fab fa-apple fa-3x icon"></i>
+      <!-- Counter for apps made -->
+      <div class="counter" data-ceil="27">27</div>
+      <!-- Description for the counter -->
+      <h4>Apps Made</h4>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>

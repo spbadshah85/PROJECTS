@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Calculator</title>
+    <!-- Link to the external stylesheet for styling the calculator -->
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <!-- Container for the calculator -->
+    <div class="calculator">
+        <!-- Input field for displaying the current value and result -->
+        <input placeholder="0" class="input">
+
+        <!-- Container for calculator buttons -->
+        <div class="btn__container">
+            <!-- Button to clear the input field -->
+            <button onclick="
+                inputValue='';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">C</button>
+
+            <!-- Button to input number 1 -->
+            <button onclick="
+                inputValue+='1';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">1</button>
+
+            <!-- Button to input number 2 -->
+            <button onclick="
+                inputValue+='2';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">2</button>
+
+            <!-- Button to input addition operator -->
+            <button onclick="
+                inputValue+='+';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">+</button>
+
+            <!-- Button to input number 3 -->
+            <button onclick="
+                inputValue+='3';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">3</button>
+
+            <!-- Button to input number 4 -->
+            <button onclick="
+                inputValue+='4';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">4</button>
+
+            <!-- Button to input subtraction operator -->
+            <button onclick="
+                inputValue+='-';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">-</button>
+
+            <!-- Button to input number 5 -->
+            <button onclick="
+                inputValue+='5';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">5</button>
+
+            <!-- Button to input number 6 -->
+            <button onclick="
+                inputValue+='6';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">6</button>
+
+            <!-- Button to input multiplication operator -->
+            <button onclick="
+                inputValue+='*';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">*</button>
+
+            <!-- Button to input number 7 -->
+            <button onclick="
+                inputValue+='7';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">7</button>
+
+            <!-- Button to input number 8 -->
+            <button onclick="
+                inputValue+='8';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">8</button>
+
+            <!-- Button to input division operator -->
+            <button onclick="
+                inputValue+='/';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">/</button>
+
+            <!-- Button to calculate the result of the expression -->
+            <button onclick="
+                document.querySelector('.input').value =eval(inputValue);
+            " class="btn">=</button>
+
+            <!-- Button to input number 9 -->
+            <button onclick="
+                inputValue+='9';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">9</button>
+
+            <!-- Button to input number 0 -->
+            <button onclick="
+                inputValue+='0';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">0</button>
+
+            <!-- Button to input decimal point -->
+            <button onclick="
+                inputValue+='.';
+                document.querySelector('.input').value = inputValue;
+            " class="btn">.</button>
+        </div>
+    </div>
+
+    <!-- Inline JavaScript to initialize the inputValue variable -->
+    <script>
+        let inputValue='';  // Variable to store the current value of the input
+    </script>
+</body>
+</html>

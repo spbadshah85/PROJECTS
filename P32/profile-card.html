@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the character encoding as UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures the page scales correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage, displayed in the browser tab -->
+    <title>Profile Card</title>
+
+    <!-- Link to an external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Page header containing the main title and navigation links -->
+    <header>
+        <!-- Main heading of the page -->
+        <h1>Our Staff</h1>
+
+        <!-- Navigation section with links to the profiles of each staff member -->
+        <nav>
+            <!-- Anchor links to quickly navigate to each profile on the same page -->
+            <a href="#profile1">Joe</a>
+            <a href="#profile2">Matt</a>
+            <a href="#profile3">Jane</a>
+        </nav>
+    </header>
+
+    <!-- Main content section of the page, containing profile cards -->
+    <main>
+        <!-- First profile card for Joe Coder -->
+        <article class="card" id="profile1">
+            <!-- Image and caption for Joe's profile -->
+            <figure>
+                <!-- Image representing Joe with alt text and specified dimensions -->
+                <img src="img/profile1-500x500.png" alt="Joe Coder" width="500" height="500">
+                <!-- Caption below the image with Joe's name -->
+                <figcaption>Joe Coder</figcaption>
+            </figure>
+            <!-- Joe's short quote -->
+            <p><q>I code stuff.</q></p>
+        </article>
+
+        <!-- Second profile card for Matt Designer -->
+        <article class="card" id="profile2">
+            <!-- Image and caption for Matt's profile -->
+            <figure>
+                <!-- Image representing Matt with alt text and specified dimensions -->
+                <img src="img/profile2-500x500.png" alt="Matt Designer" width="500" height="500">
+                <!-- Caption below the image with Matt's name -->
+                <figcaption>Matt Designer</figcaption>
+            </figure>
+            <!-- Matt's short quote -->
+            <p><q>I design stuff.</q></p>
+        </article>
+
+        <!-- Third profile card for Jane Dev Rel -->
+        <article class="card" id="profile3">
+            <!-- Image and caption for Jane's profile -->
+            <figure>
+                <!-- Image representing Jane with alt text and specified dimensions -->
+                <img src="img/profile3-500x500.png" alt="Jane Dev Rel" width="500" height="500">
+                <!-- Caption below the image with Jane's name, using a non-breaking space for "Dev Rel" -->
+                <figcaption>Jane <span class="nowrap">Dev Rel</span></figcaption>
+            </figure>
+            <!-- Jane's short quote -->
+            <p><q>I teach stuff.</q></p>
+        </article>
+    </main>
+
+    <!-- Footer section displaying company information -->
+    <footer>
+        <!-- Copyright notice with the company name -->
+        <p>&copy; Acme Co.</p>
+    </footer>
+</body>
+
+</html>

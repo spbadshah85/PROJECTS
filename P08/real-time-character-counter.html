@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page that appears in the browser tab -->
+    <title>Real Time Character Counter</title>
+    <!-- Link to the external stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container for the main content of the page -->
+    <div class="container">
+        <!-- Header for the character counter section -->
+        <h4>Real Time Character Counter</h4>
+        <!-- Textarea for user input with a maximum length of 150 characters -->
+        <textarea class="textarea" placeholder="Please write your text here..." maxlength="150"></textarea>
+        <!-- Section displaying character counts -->
+        <div class="character-counter">
+            <!-- Paragraph showing total number of characters -->
+            <p>Total Character: <span class="total"></span></p>
+            <!-- Paragraph showing remaining number of characters -->
+            <p>Remaining: <span class="remaining"></span></p>
+        </div>
+    </div>
+    <!-- Footer with author information -->
+    <a class="author-name">Developed by KrishnKant</a>
+    <!-- Link to the external JavaScript file that will handle the character counting logic -->
+    <script src="main.js"></script>
+</body>
+</html>

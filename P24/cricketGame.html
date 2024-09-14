@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Cricket Game</title>
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Center align text in the body */
+        body {text-align: center}
+
+        /* Style for buttons */
+        button {
+            font-size: 1.7rem; /* Larger font size for better readability */
+            border-radius: 10px; /* Rounded corners */
+            border: none; /* No border */
+            margin: 10px; /* Space around the buttons */
+            width: 100px; /* Fixed width for buttons */
+        }
+
+        /* Style for button hover effect */
+        button:hover {background-color: chartreuse}
+
+        /* Style for button active state (pressed) */
+        button:active {background-color: red}
+    </style>
+</head>
+<body>
+    <!-- Main title of the game -->
+    <h1>Bat Ball Stump Game</h1>
+    
+    <!-- Button for choosing 'Bat' -->
+    <button onclick="
+        comChoise=getComChoise(); /* Get computer's choice */
+        showResult('Bat',comChoise,getResult('Bat', comChoise)); /* Show result of 'Bat' choice */
+    ">Bat</button>
+    
+    <!-- Button for choosing 'Ball' -->
+    <button onclick="
+        comChoise=getComChoise(); /* Get computer's choice */
+        showResult('Ball',comChoise,getResult('Ball', comChoise)); /* Show result of 'Ball' choice */
+    ">Ball</button>
+    
+    <!-- Button for choosing 'Stump' -->
+    <button onclick="
+        comChoise=getComChoise(); /* Get computer's choice */
+        showResult('Stump',comChoise,getResult('Stump', comChoise)); /* Show result of 'Stump' choice */
+    ">Stump</button>
+    
+    <!-- Button to reset the game -->
+    <button onclick="
+        localStorage.clear(); /* Clear any stored game data */
+        resetScore(); /* Reset the score */
+        document.querySelector('.display').innerText=''; /* Clear the display text */
+    ">Reset</button>
+    
+    <!-- Display area for showing results -->
+    <h2 class="display"></h2>
+    
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="cricketGame.js"></script>
+</body>
+</html>

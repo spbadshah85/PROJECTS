@@ -1,7 +1,3 @@
-Here’s a README file template for your web development project repository:
-
----
-
 # Web Development Projects
 
 Welcome to my GitHub repository where I share my journey of learning web development! This repository contains projects ranging from small to large, demonstrating my skills in HTML, CSS, and JavaScript. Each project focuses on a specific aspect of web development, and I’ve included detailed descriptions and code samples to help others learn along the way.

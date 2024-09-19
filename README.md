@@ -78,6 +78,8 @@ This repository is a collection of web development projects that range from begi
 ### P31 ==> [__Menu__](https://github.com/Krishnkant47/PROJECTS/tree/main/P31)
 
 ### P32 ==> [__Profile Card__](https://github.com/Krishnkant47/PROJECTS/tree/main/P32)
+
+### P33 ==> [__My Restaurant(tailwindcss)__](https://github.com/Krishnkant47/PROJECTS/tree/main/P33)
 And more to come!
 
 ## Technologies Used

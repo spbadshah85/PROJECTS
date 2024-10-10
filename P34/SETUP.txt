@@ -1,0 +1,8 @@
+setup instructions:
+    1. fork the repo or download zip file
+Run these commands in terminal for downloading dependencies:-
+    2. npm install
+    3. npx json-server --watch data/db.json --port 8000
+    4. npm run dev
+
+ welcome contributions! If you'd like to add your own projects or suggest improvements, please feel free to submit a pull request or open an issue. Make sure to follow best practices in code and include detailed comments.

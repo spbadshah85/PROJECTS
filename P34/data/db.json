@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My new website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis inventore rem, ratione repellat id quis neque, praesentium, beatae iste fugiat earum! Laboriosam fuga velit officia vel porro similique nostrum placeat ut animi, ex ratione error amet optio consequuntur ea deleniti sunt repellat earum provident aperiam? Quasi, odio voluptatum! Est.",
+      "author": "mario",
+      "id": "1"
+    },
+    {
+      "title": "Welcome party!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis inventore rem, ratione repellat id quis neque, praesentium, beatae iste fugiat earum! Laboriosam fuga velit officia vel porro similique nostrum placeat ut animi, ex ratione error amet optio consequuntur ea deleniti sunt repellat earum provident aperiam? Quasi, odio voluptatum! Est.",
+      "author": "yoshi",
+      "id": "2"
+    },
+    {
+      "title": "Web dev top tips",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis inventore rem, ratione repellat id quis neque, praesentium, beatae iste fugiat earum! Laboriosam fuga velit officia vel porro similique nostrum placeat ut animi, ex ratione error amet optio consequuntur ea deleniti sunt repellat earum provident aperiam? Quasi, odio voluptatum! Est.",
+      "author": "mario",
+      "id": "3"
+    }
+  ]
+}

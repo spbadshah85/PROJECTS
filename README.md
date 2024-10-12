@@ -80,7 +80,10 @@ This repository is a collection of web development projects that range from begi
 ### P32 ==> [__Profile Card__](https://github.com/Krishnkant47/PROJECTS/tree/main/P32)
 
 ### P33 ==> [__My Restaurant(tailwindcss)__](https://github.com/Krishnkant47/PROJECTS/tree/main/P33)
+
 ### P34 ==> [__My Blogs(React and Tailwindcss)__](https://github.com/Krishnkant47/PROJECTS/tree/main/P34)
+
+### P35 ==> [__Password Generator(next level)__](https://github.com/Krishnkant47/PROJECTS/tree/main/P35)
 And more to come!
 
 ## Technologies Used
@@ -88,6 +91,8 @@ And more to come!
 - **HTML5**: The foundation of web pages, used for structuring content.
 - **CSS3**: Styling web pages, including layouts, animations, and responsiveness.
 - **JavaScript**: Adding interactivity and dynamic behavior to web pages.
+- **Tailwind**: utility-first CSS framework that allows developers to build custom designs quickly
+- **React**: single-page applications, by creating reusable components and managing state efficiently.
   
 ## How to Use
 1. Clone the repository:
